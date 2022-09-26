@@ -1,0 +1,64 @@
+#card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    #products{
+        padding: 20px;
+        margin: 30px;
+        border: 3px solid #F91A40;
+        border-radius: 20px 0 20px 0;
+        width: 60%;
+        color: white;
+
+        .box{
+            border: 3px solid white;
+            border-radius: 20px 0 20px 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .photo{
+                width: 20% !important;
+                overflow: hidden !important;
+                object-fit: cover;
+                img{
+                    width: 100% !important;
+                }
+            }
+
+            .box-info{
+                width: 75%;
+                
+                h6{
+                    font-size: 18px;
+                }
+                
+                input{
+                    margin: 10px 0;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    color: white;
+                    
+                }
+
+            }
+        }
+
+    }
+    
+    
+    .balance{
+        width: 30%;
+        border: 1px solid white ;
+        border-radius: 10px;
+        overflow: hidden;
+        color: white;
+    }
+}
+
+
+
+

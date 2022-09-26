@@ -1,0 +1,66 @@
+.header {
+  z-index: 111;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #131313;
+  padding: 20px;
+}
+.header .logo a h3 {
+  color: white;
+  transition: 0.5s;
+}
+.header .logo a h3:hover {
+  color: #F91A40;
+}
+.header .nav a {
+  font-size: 24px;
+  margin-right: 30px;
+  transition: 0.5s;
+  color: #F91A40;
+  padding: 1px 10px;
+  border: 1px solid transparent;
+  border-radius: 0 10px 0 10px;
+}
+.header .nav a:hover {
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px 0px 10px 0px;
+}
+.header .basket {
+  display: flex !important;
+  justify-content: center !important;
+}
+.header .basket a i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #F91A40;
+  transition: 0.5s;
+}
+.header .basket a i:hover {
+  color: white;
+}
+.header .basket #menu {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  .header .logo {
+    width: 50%;
+  }
+  .header .basket {
+    justify-content: end !important;
+    width: 50%;
+  }
+  .header #menu {
+    display: inline !important;
+  }
+  .header .nav {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */
