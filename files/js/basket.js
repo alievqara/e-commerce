@@ -6,6 +6,7 @@ if(localStorage.getItem('card')=== null){
 
 
 
+
 let btns = document.getElementsByClassName('add_card');
 setTimeout(() => {
     for(let btn of btns){
@@ -24,7 +25,7 @@ setTimeout(() => {
                     Title: title,
                     Image: image,
                     Count: 1,
-    
+                    
                 })
             }else{
                 existProd.Count += 1 ;
@@ -37,10 +38,10 @@ setTimeout(() => {
 
 
 function GetElementsForBasket(){
-    let basket = JSON.parse(localStorage.getItem('card'))
-    let item = '';
-    basket.forEach(item => {
-        item += `
+    let basket = JSON.parse(localStorage.getItem('card'));
+    let items = '';
+    basket.forEach( item => {
+        items += `
         <div class="box mt-3">
             <div class="photo">
                 <img src="${item.Image}" alt="">
@@ -53,14 +54,16 @@ function GetElementsForBasket(){
             </div>
         </div>
         `
-        document.getElementById('products').innerHTML = item;
+
     })
+    document.getElementById('blist').innerHTML = items;
+    
 }
 GetElementsForBasket();
 
 
 
-function ConuntCard() {
+function CountCard() {
     let basket = JSON.parse(localStorage.getItem('card'));
     if (basket.length === 0) {
         document.getElementById('card').style.display = 'none';
@@ -69,4 +72,7 @@ function ConuntCard() {
     }
     
 }
-ConuntCard();
+CountCard();
+
+
+    

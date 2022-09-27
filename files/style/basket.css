@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
 }
-#card #products {
+#card #blist {
   padding: 20px;
   margin: 30px;
   border: 3px solid #F91A40;
@@ -11,7 +11,7 @@
   width: 60%;
   color: white;
 }
-#card #products .box {
+#card #blist .box {
   border: 3px solid white;
   border-radius: 20px 0 20px 0;
   overflow: hidden;
@@ -19,22 +19,22 @@
   justify-content: space-between;
   align-items: center;
 }
-#card #products .box .photo {
+#card #blist .box .photo {
   width: 20% !important;
   overflow: hidden !important;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#card #products .box .photo img {
+#card #blist .box .photo img {
   width: 100% !important;
 }
-#card #products .box .box-info {
+#card #blist .box .box-info {
   width: 75%;
 }
-#card #products .box .box-info h6 {
+#card #blist .box .box-info h6 {
   font-size: 18px;
 }
-#card #products .box .box-info input {
+#card #blist .box .box-info input {
   margin: 10px 0;
   border: 1px solid white;
   border-radius: 5px;

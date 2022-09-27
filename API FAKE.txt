@@ -1,0 +1,9 @@
+'https://dummyjson.com/products'
+
+'https://api.escuelajs.co/api/v1/products'
+
+
+'https://amazon23.p.rapidapi.com/product-details?asin=B08H8VZ6PV&country=US'
+
+
+'https://api.storerestapi.com/products/running-sneaker'	
